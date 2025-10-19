@@ -1,9 +1,9 @@
 -- ======================================================
 -- Database: GEI Certificate of Inspection System
--- Class: CSE2102
+-- Class: CSE2102 (Database Systems Design and Information Management)
 -- Author: Tarico Henry, Serina Garret, Shemar Holder, Leandro Rodriguez
--- Prepared for: Professor Amrita Ramnauth and Professor Phillip Gajadhar
--- Date: October 2025
+-- Prepared for: Miss Amrita Ramnauth and Mr Phillip Gajadhar
+-- Date: 22nd October 2025
 -- ======================================================
 
 CREATE DATABASE gei_certificate_db;
@@ -150,10 +150,17 @@ CREATE TABLE Incident (
 -- =======================================================================================================================
 
 -- Regions
-INSERT INTO Region VALUES 
+INSERT INTO Region (RegionID, RegionName) VALUES 
 (1, 'Region 1 - Barima-Waini'),
 (2, 'Region 2 - Pomeroon-Supenaam'),
-(3, 'Region 3 - Essequibo Islands-West Demerara');
+(3, 'Region 3 - Essequibo Islands-West Demerara'),
+(4, 'Region 4 - Demerara-Mahaica'),
+(5, 'Region 5 - Mahaica-Berbice'),
+(6, 'Region 6 - East Berbice-Corentyne'),
+(7, 'Region 7 - Cuyuni-Mazaruni'),
+(8, 'Region 8 - Potaro-Siparuni'),
+(9, 'Region 9 - Upper Takutu-Upper Essequibo'),
+(10, 'Region 10 - Upper Demerara-Berbice');
 
 -- Licenses
 INSERT INTO License (issue_date, expiry_date) VALUES
