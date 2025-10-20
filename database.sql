@@ -1,7 +1,7 @@
 -- ======================================================
 -- Database: GEI Certificate of Inspection System
 -- Class: CSE2102
--- Author: Tarico Henry, Serina Garret, Shemar Holder, Leandro Rodriguez
+-- Author: Tarico Henry, Serina Garrett, Shemar Holder, Leandro Rodriguez
 -- Prepared for: Professor Amrita Ramnauth and Professor Phillip Gajadhar
 -- Date: October 2025
 -- ======================================================
@@ -153,25 +153,125 @@ CREATE TABLE Incident (
 INSERT INTO Region VALUES 
 (1, 'Region 1 - Barima-Waini'),
 (2, 'Region 2 - Pomeroon-Supenaam'),
-(3, 'Region 3 - Essequibo Islands-West Demerara');
+(3, 'Region 3 - Essequibo Islands-West Demerara'),
+(4, 'Region 4 - Demerara-Machica'),
+(5, 'Region 5 - Machica-Berbice'),
+(6, 'Region 6 - East Berbice-Corentyne'),
+(7, 'Region 7 - Cuyurni-Mazaruni'),
+(8, 'Region 8 - Potaro-Siparuni'),
+(9, 'Region 9 - Upper Takutu-Upper Essequibo'),
+(10, 'Region 10 - Upper Demerara-Berbice');
 
 -- Licenses
 INSERT INTO License (issue_date, expiry_date) VALUES
 ('2024-01-15', '2026-01-15'),
 ('2023-06-10', '2025-06-10'),
-('2024-03-01', '2026-03-01');
+('2024-03-01', '2026-03-01'),
+('2025-09-10', '2027-09-10'),
+('2025-05-06', '2027-05-06'),
+('2023-12-12', '2025-12-12'),
+('2024-01-29', '2026-01-29'),
+('2023-03-11', '2025-03-11'),
+('2025-08-01', '2027-08-01'),
+('2025-02-08', '2027-02-08'),
+('2025-04-24', '2027-04-24'),
+('2024-09-24', '2026-09-24'),
+('2024-07-26', '2026-07-26'),
+('2023-05-22', '2025-05-22'),
+('2024-06-01', '2026-06-01'),
+('2024-01-29', '2026-01-29'),
+('2025-05-06', '2027-05-06'),
+('2024-01-15', '2026-01-15'),
+('2024-01-15', '2026-01-15'),
+('2025-10-20', '2027-10-20'),
+('2025-10-19', '2027-10-19'),
+('2025-10-07', '2027-10-07'),
+('2023-04-17', '2025-04-07'),
+('2023-11-11', '2025-11-11'),
+('2024-03-21', '2026-03-21'),
+('2024-12-28', '2026-12-28'),
+('2024-12-28', '2026-12-28'),
+('2023-10-07', '2025-10-07'),
+('2023-12-29', '2025-12-29'),
+('2024-07-09', '2026-07-09'),
+('2025-02-28', '2027-02-28'),
+('2024-05-22', '2026-05-22');
 
 -- Contractors
 INSERT INTO Contractor (first_name, last_name, lot_number, street_name, village, city, region_number, license_id, status) VALUES
-('John', 'Persaud', '12', 'King Street', 'Anna Regina', 'Essequibo', 2, 1, 'Active'),
-('Ravi', 'Singh', '23', 'Water Street', 'Charity', 'Pomeroon', 2, 2, 'Active'),
-('Deon', 'James', '45', 'Main Street', 'Tuschen', 'Parika', 3, 3, 'Suspended');
+('John', 'Lion', '12', 'Stiff Street', 'York', 'East Coast Demerara', 4, 1, 'Active'),
+('Ravi', 'Bee', '23', 'Water Street', 'New Town', 'Georgetown', 4, 2, 'Active'),
+('Deon', 'Cummings', '45', 'Robb Street', 'Queenstown', 'Georgetown', 4, 3, 'Suspended'),
+('Jane', 'Doe', '5680', 'Ham Street', 'Kingston', 'Georgetown', 4, 1, 'Active'),
+('King', 'June', '99', 'East Street', 'Pine Ville', 'Essequibo', 2, 1, 'Active'),
+('Ram', 'Singh', '1', 'West Road', 'Xan', 'West Bank Demerara', 3, 1, 'Active'),
+('Christan', 'Grey', '94', '', 'Brothers Village', 'West Bank Demerara', 3, 1, 'Active'),
+('Kellyann', 'Manchester', '465', 'Win Road', 'Anna Regina', 'Essequibo', 2, 1, 'Active'),
+('Juke', 'Singh', '45', 'Diamond Street', 'Queenstown', 'Georgetown', 4, 1, 'Active'),
+('Michael', 'Woods', '10', 'Jewl Road', 'Bagwatt', 'East Bank Demerara', 4, 1, 'Active'),
+('Joshua', 'Patrick', '1479', '', 'Ick', 'Southtown', 4, 1, 'Active'),
+('Mark', 'Quin', '614', 'Middle Street', 'Victory', 'East Coast Demerara', 4, 1, 'Active'),
+('Luke', 'Morris', '4120', 'Front Road', 'Apple Hill', 'West Coast Demerara', 3, 1, 'Active'),
+('John', 'Fay', '704', 'Back Road', 'New Town', 'Georgetown', 4, 1, 'Active'),
+('Adam', 'Hamshire', '1111', 'Singh Street', 'Anna Regina', 'Essequibo', 2, 1, 'Active'),
+('Eve', 'Williams', '52', '', 'Diamond', 'Georgetown', 4, 1, 'Active'),
+('Marilyn', 'Monroe', '81', '', 'Good Intent', 'West Bank Demerara', 3, 1, 'Active'),
+('Keisha', 'Lord', '40', 'South Road', '', 'Georgetown', 4, 1, 'Active'),
+('Nicholas', 'August', '74', 'Alexander Road', '', 'West Bank Demerara', 3, 1, 'Active'),
+('Cassie', 'Ramsingh', '33', 'Bourda Road', 'Miles', 'Essequibo', 2, 1, 'Active'),
+('Frank', 'Origin', '', 'Light Street', 'Xan', 'Georgetown', 4, 1, 'Active'),
+('George', 'Cummings', '2088', 'Camp Street', 'Kitty', 'Georgetown', 4, 1, 'Active'),
+('Kenny', 'Pine', '200', 'Cummings Street', 'Xan', 'East Bank Demerara', 4, 1, 'Active'),
+('Vanessa', 'King', '450', 'Wellington Street', 'Bagwatt', 'East Bank Demerara', 4, 1, 'Active'),
+('Ashley', 'Benjamin', '592', 'Fifth Street', 'Lodge', 'Georgetown', 4, 1, 'Active'),
+('Rod', 'Wave', '38', 'First Street', 'Wales', 'West Bank Demerara', 3, 1, 'Active'),
+('Luke', 'Persaud', '', 'Middle Street', 'Patienta', 'West Bank Demerara', 3, 1, 'Active'),
+('Henry', 'August', '', 'Well Road', 'Bikini Bottom', 'Undersea', 6, 1, 'Active'),
+('Matthew', 'Blue', '12', 'Purple Street', 'Forks', 'East Coast Demerara', 4, 1, 'Active'),
+('Nara', 'Smith', '1330', 'Dune Lane', 'Beacon Hills', 'South Coast Demerara', 9, 1, 'Active'),
+('Lucky', 'Smith', '110', 'King Street', 'Mystic Falls', 'North', 1, 1, 'Active'),
+('Slim', 'Easy', '116', 'King Street', 'Mystic Falls', 'North', 1, 1, 'Active');
+
 
 -- Owners
 INSERT INTO Owner (first_name, last_name, phone, email) VALUES
-('Mark', 'Adams', '5926001111', 'mark.adams@gmail.com'),
-('Lisa', 'Duncan', '5926002222', 'lisa.duncan@yahoo.com'),
-('Andre', 'Mohamed', '5926003333', 'andre.mohamed@gmail.com');
+('Mark', 'Vander', '5926001111', 'mark.vander@gmail.com'),
+('Lisa', 'Martins', '5926002222', 'lisa.martins@yahoo.com'),
+('Linden', 'Forbes', '5926003333', 'linden.forbes@gmail.com'),
+('Anthony', 'May', '5926658412', 'anthonymay@hotmail.com'),
+('Andre', 'Playton', '5926879851', 'andre.playton@gmail.com'),
+('Phillip', 'Jersey', '5926011580', 'phillipjjersey@gmail.com'),
+('Evan', 'Smith', '5926142019', 'evan.smith@gmail.com'),
+('Charles', 'Handover', '5922225782', 'charles.handover63@gmail.com'),
+('Karl', 'Nick', '5927048127', 'nickkarl@gmail.com'),
+('Shanty', 'Samuels', '5927194120', 'shantysamuels@yahoo.com'),
+('Dawn', 'Mohan', '5926544433', 'dawnmohan@outlook.com'),
+('Lawrence', 'Upperman', '5926904120', 'renceman32@outlook.com'),
+('Andrew', 'Niles', '5926110404', 'andrew.niles@outlook.com'),
+('Stefon', 'Barrack', '5922258743', 'stefon.barrack@yahoo.com'),
+('Lily', 'Forth', '5926289091', 'lily.forth@gmail.com'),
+('Linda', 'Noman', '5922275433', 'lovelylinda@yahoo.com'),
+('Michelle', 'Meter', '5922223333', 'michelle.meter@gmail.com'),
+('Zander', 'Singh', '5922221012', 'zander123@gmail.com'),
+('Ian', 'Mohamed', '59222296175', 'ianmohamed@hotmail.com'),
+('Ali', 'Jackson', '5925512942', 'ali.jackson@gmail.com'),
+('Dre', 'Patterson', '5922225782', 'dretheone2@gmail.com'),
+('June', 'Karter', '5925069466', 'junekarter@gmail.com'),
+('Amy', 'Srom', '5927046565', 'amy.srom592@gmail.com'),
+('Selena', 'Gomez', '5927444350', 'selena.gomez@gmail.com'),
+('Hendrick', 'Lane', '5927101186', 'hendrick.lane@gmail.com'),
+('Karen', 'Caldon', '5926984120', 'karen.caldon@gmail.com'),
+('Kurt', 'Jupiter', '5926013650', 'kurt.jupiter@gmail.com'),
+('Natasha', 'Graham', '5926058463', 'natasha.graham@gmail.com'),
+('Alex', 'Karter', '5927985625', 'alex.karter@gmail.com'),
+('Daniel', 'Mohamed', '5926224443', 'daniel.mohamed19@gmail.com'),
+('Jacob', 'Smith', '5926223032', 'jacob.smith@gmail.com'),
+('Bob', 'Miller', '5926403038', 'bobmiller09@gmail.com'),
+('Nervana', 'Ceaser', '5926614587', 'nervana.ceaser@gmail.com'),
+('Willard', 'Mohammed', '5926795213', 'willard.mohammed@gmail.com'),
+('Pam', 'Onick', '5926132027', 'pam.onick@gmail.com'),
+('Patsy', 'Michaelson', '5922239546', 'patsy.k.michaelson@gmail.com');
+
 
 -- Buildings
 INSERT INTO Building (lot_number, street_name, village, city, region_number, building_type, owner_id) VALUES
