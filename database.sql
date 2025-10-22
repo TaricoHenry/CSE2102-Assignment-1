@@ -1,10 +1,10 @@
--- ======================================================
+-- ======================================================================
 -- Database: GEI Certificate of Inspection System
 -- Class: CSE2102
 -- Author: Tarico Henry, Serina Garrett, Shemar Holder, Leandro Rodriguez
 -- Prepared for: Professor Amrita Ramnauth and Professor Phillip Gajadhar
 -- Date: October 2025
--- ======================================================
+-- ======================================================================
 
 CREATE DATABASE gei_certificate_db;
 USE gei_certificate_db;
@@ -133,9 +133,9 @@ CREATE TABLE Certificate (
 );
 
 -- ======================================================
--- TABLE: Incident
+-- TABLE: Incident_Report
 -- ======================================================
-CREATE TABLE Incident (
+CREATE TABLE Incident_Report (
     incident_id INT PRIMARY KEY AUTO_INCREMENT,
     incident_date DATE NOT NULL,
     description TEXT,
@@ -495,8 +495,8 @@ INSERT INTO Certificate (issue_date, status, application_number) VALUES
 ('2025-10-30','Valid',29),
 ('2025-10-31','Valid',30);
 
--- Incidents
-INSERT INTO Incident (incident_date, description, building_id, inspector_id) VALUES
+-- Incident_Report
+INSERT INTO Incident_Report (incident_date, description, building_id, inspector_id) VALUES
 ('2025-08-21', 'Minor electrical fire due to overload', 1, 1),
 ('2025-09-25', 'Faulty wiring caused short circuit', 2, 2);
 
